@@ -24,7 +24,7 @@ namespace Web.Controllers
         }
 
         // GET-User: Flights
-        public async Task<IActionResult> Index(FlightsIndexViewModel model)
+        public async Task<IActionResult> Index(ReservationsIndexViewModel model)
         {
             model.Pager ??= new PagerViewModel();
             model.Pager.CurrentPage = model.Pager.CurrentPage <= 0 ? 1 : model.Pager.CurrentPage;
@@ -49,15 +49,15 @@ namespace Web.Controllers
             return View(model);
         }
 
-        // GET: Reservations/Reserve
-        public IActionResult Reserve()
+        // GET: Reservations
+        public IActionResult Create()
         {
             ReservationsCreateViewModel model = new ReservationsCreateViewModel();
 
             return View(model);
         }
 
-        // POST: Reservations/Create
+        // POST: Reservations
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ReservationsCreateViewModel createModel)
@@ -84,7 +84,6 @@ namespace Web.Controllers
 
                 return RedirectToAction(nameof(Index));
             }
-
             return View(createModel);
         }
     }

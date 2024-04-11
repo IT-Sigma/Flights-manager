@@ -1072,7 +1072,6 @@ C:\Users\kyord\Desktop\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3
 C:\Users\kyord\Desktop\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Razor\Views\Flights\Create.cshtml.g.cs
 C:\Users\kyord\Desktop\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Razor\Views\Flights\Edit.cshtml.g.cs
 C:\Users\kyord\Desktop\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Razor\Views\Flights\Index.cshtml.g.cs
-C:\Users\kyord\Desktop\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Razor\Views\Reservations\Create.cshtml.g.cs
 C:\Users\kyord\Desktop\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Razor\Views\Reservations\Index.cshtml.g.cs
 C:\Users\kyord\Desktop\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\kyord\Desktop\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -1095,3 +1094,4 @@ C:\Users\kyord\Desktop\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3
 C:\Users\kyord\Desktop\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Web.pdb
 C:\Users\kyord\Desktop\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Web.genruntimeconfig.cache
 C:\Users\kyord\Desktop\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Razor\Views\Reservations\Index-Admin.cshtml.g.cs
+C:\Users\kyord\Desktop\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Razor\Views\Reservations\Create.cshtml.g.cs
