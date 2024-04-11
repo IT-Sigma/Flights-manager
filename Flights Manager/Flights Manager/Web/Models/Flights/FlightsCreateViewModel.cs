@@ -8,7 +8,9 @@ namespace Web.Models.Flights
     {
         [Key]
         [Required]
-        public int PlaneNumber { get; set; }
+        public int FlightId { get; set; }
+        [Required]
+        public string PlaneNumber { get; set; }
         [Required]
         public string LocationFrom { get; set; }
         [Required]

@@ -10,7 +10,8 @@ namespace Data.Entity
     public class Flight
     {
         [Key]
-        public int PlaneNumber { get; set; }
+        public int FlightId { get; set; }
+        public string PlaneNumber { get; set; }
         public string LocationFrom { get; set; }
         public string LocationTo { get; set; }
         public DateTime TakeOff { get; set; }

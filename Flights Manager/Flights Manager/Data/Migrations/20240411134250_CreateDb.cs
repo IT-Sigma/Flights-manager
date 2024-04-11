@@ -11,8 +11,9 @@ namespace Data.Migrations
                 name: "Flights",
                 columns: table => new
                 {
-                    PlaneNumber = table.Column<int>(nullable: false)
+                    FlightId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    PlaneNumber = table.Column<string>(nullable: true),
                     LocationFrom = table.Column<string>(nullable: true),
                     LocationTo = table.Column<string>(nullable: true),
                     TakeOff = table.Column<DateTime>(nullable: false),
@@ -24,7 +25,7 @@ namespace Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Flights", x => x.PlaneNumber);
+                    table.PrimaryKey("PK_Flights", x => x.FlightId);
                 });
 
             migrationBuilder.CreateTable(
@@ -33,7 +34,7 @@ namespace Data.Migrations
                 {
                     ReservationId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    PlaneNumber = table.Column<int>(nullable: false),
+                    FlightId = table.Column<int>(nullable: false),
                     FirstName = table.Column<string>(nullable: true),
                     Surname = table.Column<string>(nullable: true),
                     LastName = table.Column<string>(nullable: true),

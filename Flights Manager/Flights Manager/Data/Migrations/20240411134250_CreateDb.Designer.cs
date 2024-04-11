@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(FlightsManagerDb))]
-    [Migration("20240411085313_CreateDb")]
+    [Migration("20240411134250_CreateDb")]
     partial class CreateDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,7 +23,7 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Entity.Flight", b =>
                 {
-                    b.Property<int>("PlaneNumber")
+                    b.Property<int>("FlightId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -40,6 +40,9 @@ namespace Data.Migrations
                     b.Property<string>("PilotName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("PlaneNumber")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PlaneType")
                         .HasColumnType("nvarchar(max)");
 
@@ -52,7 +55,7 @@ namespace Data.Migrations
                     b.Property<int>("UnoccupiedSeats")
                         .HasColumnType("int");
 
-                    b.HasKey("PlaneNumber");
+                    b.HasKey("FlightId");
 
                     b.ToTable("Flights");
                 });
@@ -76,6 +79,9 @@ namespace Data.Migrations
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("FlightId")
+                        .HasColumnType("int");
+
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
@@ -83,9 +89,6 @@ namespace Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("PhoneNumber")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PlaneNumber")
                         .HasColumnType("int");
 
                     b.Property<string>("Surname")

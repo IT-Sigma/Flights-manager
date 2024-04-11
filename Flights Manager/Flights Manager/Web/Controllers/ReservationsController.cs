@@ -24,7 +24,7 @@ namespace Web.Controllers
         }
 
         // GET-User: Flights
-        public async Task<IActionResult> Index(ReservationsIndexViewModel model)
+        public async Task<IActionResult> Index(FlightsIndexViewModel model)
         {
             model.Pager ??= new PagerViewModel();
             model.Pager.CurrentPage = model.Pager.CurrentPage <= 0 ? 1 : model.Pager.CurrentPage;
@@ -67,7 +67,7 @@ namespace Web.Controllers
                 Reservation reservation = new Reservation
                 {
                     ReservationId = createModel.ReservationId,
-                    PlaneNumber = createModel.PlaneNumber,
+                    FlightId = createModel.FlightId,
                     FirstName = createModel.FirstName,
                     Surname = createModel.Surname,
                     LastName = createModel.LastName,

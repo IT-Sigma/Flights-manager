@@ -10,7 +10,7 @@ namespace Web.Models.Reservations
         [Required]
         public int ReservationId { get; set; }
         [Required] 
-        public int PlaneNumber { get; set; }
+        public int FlightId { get; set; }
         [Required]
         public string FirstName { get; set; }
         [Required]

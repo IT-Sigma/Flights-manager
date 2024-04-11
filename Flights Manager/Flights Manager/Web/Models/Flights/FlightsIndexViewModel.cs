@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Web.Models.Flights;
+using Web.Models.Reservations;
 using Web.Models.Shared;
 
 namespace Web.Models.Flights

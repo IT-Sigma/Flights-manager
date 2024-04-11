@@ -29,6 +29,7 @@ namespace Web.Controllers
 
             List<FlightsViewModel> items = await _context.Flights.Skip((model.Pager.CurrentPage - 1) * PageSize).Take(PageSize).Select(c => new FlightsViewModel()
             {
+                FlightId = c.FlightId,
                 PlaneNumber = c.PlaneNumber,
                 LocationFrom = c.LocationFrom,
                 LocationTo = c.LocationTo,
@@ -64,6 +65,7 @@ namespace Web.Controllers
             {
                 Flight flight = new Flight
                 {
+                    FlightId = createModel.FlightId,
                     PlaneNumber = createModel.PlaneNumber,
                     LocationFrom = createModel.LocationFrom,
                     LocationTo = createModel.LocationTo,
@@ -141,7 +143,7 @@ namespace Web.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!FlightExists(flight.PlaneNumber))
+                    if (!FlightExists(flight.FlightId))
                     {
                         return NotFound();
                     }
@@ -169,7 +171,7 @@ namespace Web.Controllers
 
         private bool FlightExists(int id)
         {
-            return _context.Flights.Any(e => e.PlaneNumber == id);
+            return _context.Flights.Any(e => e.FlightId == id);
         }
     }
 }

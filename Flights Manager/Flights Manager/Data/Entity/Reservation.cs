@@ -11,7 +11,7 @@ namespace Data.Entity
     {
         [Key]
         public int ReservationId { get; set; }
-        public int PlaneNumber { get; set; }
+        public int FlightId { get; set; }
         public string FirstName { get; set; }
         public string Surname { get; set; }
         public string LastName { get; set; }
