@@ -1,4 +1,4 @@
-﻿@using Web.Models.Reservations
+﻿@using Web.Models.Flights
 @model Web.Models.Reservations.ReservationsIndexViewModel
 
 @{
@@ -12,80 +12,68 @@
     <thead>
         <tr>
             <th>
-                Reservation Id
-            </th>
-            <th>
                 Plane Number
             </th>
             <th>
-                First Name
+                Location from
             </th>
             <th>
-                Surname
+                Location to
             </th>
             <th>
-                LastName
+                Take off
             </th>
             <th>
-                Email
+                Landing
             </th>
             <th>
-                EGN
+                Plane type
             </th>
             <th>
-                Address
+                Pilot name
             </th>
             <th>
-                Phone Number
+                Unoccupied seats
             </th>
             <th>
-                Nationality
-            </th>
-            <th>
-                Ticket type
+                Unoccupied business seats
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (ReservationsViewModel item in Model.Items)
+        @foreach (FlightsViewModel item in Model.Items)
         {
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ReservationId)
-                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.PlaneNumber)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.FirstName)
+                    @Html.DisplayFor(modelItem => item.LocationFrom)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Surname)
+                    @Html.DisplayFor(modelItem => item.LocationTo)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.LastName)
+                    @Html.DisplayFor(modelItem => item.TakeOff)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Email)
+                    @Html.DisplayFor(modelItem => item.Landing)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.EGN)
+                    @Html.DisplayFor(modelItem => item.PlaneType)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Address)
+                    @Html.DisplayFor(modelItem => item.PilotName)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.PhoneNumber)
+                    @Html.DisplayFor(modelItem => item.UnoccupiedSeats)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Nationality)
+                    @Html.DisplayFor(modelItem => item.UnoccupiedBusinessSeats)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.TicketType)
-                </td>
-                <td>
-                    <a asp-action="Create" asp-route-id="@item.ReservationId">Reserve</a> 
+                    <a asp-action="Create" asp-route-id="@item.PlaneNumber">Reserve</a>
                 </td>
             </tr>
         }

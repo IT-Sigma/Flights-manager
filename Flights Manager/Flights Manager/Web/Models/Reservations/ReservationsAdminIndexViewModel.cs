@@ -1,14 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Web.Models.Shared;
-using Web.Models.Flights;
 
 namespace Web.Models.Reservations
 {
-    public class ReservationsIndexViewModel
+    public class ReservationsAdminIndexViewModel
     {
         public PagerViewModel Pager { get; set; }
 
-        public ICollection<FlightsViewModel> Items { get; set; }
+        public ICollection<ReservationsAdminViewModel> Items { get; set; }
     }
 }

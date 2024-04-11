@@ -23,7 +23,7 @@ namespace Web.Controllers
             _context = new FlightsManagerDb();
         }
 
-        // GET: Flights
+        // GET-User: Flights
         public async Task<IActionResult> Index(FlightsIndexViewModel model)
         {
             model.Pager ??= new PagerViewModel();

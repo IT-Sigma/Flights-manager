@@ -14,7 +14,7 @@ namespace Web.Controllers
 
         public IActionResult Index()
         {
-            return RedirectToAction("Index-User","Reservations");
+            return RedirectToAction("Index", "Reservations");
         }
     }
 }

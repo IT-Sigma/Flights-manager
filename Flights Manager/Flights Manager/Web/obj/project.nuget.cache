@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1pmxK6HFNN5g+ZGuZbv7SGoK9j+mRRvIoZT3wT5b7LS1o3T/TyI3Qezg0+G2Y4Hr3QonaB3Zxb63F4aQzt6ulw==",
+  "dgSpecHash": "Z1YfGetEdpFD4mOamElxeyYYP3EBeXypypMY3a/kB9z2ty5fTf4lRarzmXvZdA+D/Jw9Hbi8HdTHJNHTifL0fw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kyord\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Web\\Web.csproj",
+  "projectFilePath": "C:\\Users\\kyord\\Desktop\\Flights Manager\\Flights Manager\\Web\\Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kyord\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\kyord\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
