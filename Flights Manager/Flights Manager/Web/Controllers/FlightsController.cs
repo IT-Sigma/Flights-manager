@@ -77,12 +77,14 @@ namespace Web.Controllers
                     UnoccupiedBusinessSeats = createModel.UnoccupiedBusinessSeats,
                 };
 
-                _context.Add(flight);
-                await _context.SaveChangesAsync();
+                if (flight.Landing > flight.TakeOff)
+                {
+                    _context.Add(flight);
+                    await _context.SaveChangesAsync();
 
-                return RedirectToAction(nameof(Index));
+                    return RedirectToAction(nameof(Index));
+                }
             }
-
             return View(createModel);
         }
 
