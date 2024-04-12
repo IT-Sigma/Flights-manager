@@ -1,3 +1,3 @@
 Как да свържем резервациите с полетите(номерата им)
 
-Validations
+Validations-> Message?
