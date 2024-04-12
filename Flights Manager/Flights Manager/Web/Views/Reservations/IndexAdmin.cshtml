@@ -12,13 +12,33 @@
     <thead>
         <tr>
             <th>
+                Reservation id
+            </th>
+            <th>
                 First name
+            </th>
+            <th>
+                Surname
             </th>
             <th>
                 Last name
             </th>
             <th>
-                Reservation id
+                Email
+            </th>
+            <th>
+                EGN
+            </th>
+            <th>
+                Address
+            </th>
+            <th>
+                Phone number
+            <th>
+                Nationality
+            </th>
+            <th>
+               Ticket type
             </th>
             <th></th>
         </tr>
@@ -28,13 +48,34 @@
         {
             <tr>
                 <td>
+                    @Html.DisplayFor(modelItem => item.ReservationId)
+                </td>
+                <td>
                     @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Surname)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.LastName)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.ReservationId)
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EGN)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhoneNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nationality)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TicketType)
                 </td>
             </tr>
         }

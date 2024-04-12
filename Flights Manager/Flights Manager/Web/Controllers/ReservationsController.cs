@@ -59,6 +59,15 @@ namespace Web.Controllers
                 ReservationId = c.ReservationId,
                 FlightId = c.FlightId,
                 UserId = c.UserId,
+                FirstName = c.FirstName,
+                Surname = c.Surname,
+                LastName = c.LastName,
+                Email = c.Email,
+                EGN = c.EGN,
+                Address = c.Address,
+                PhoneNumber = c.PhoneNumber,
+                Nationality = c.Nationality,
+                TicketType = c.TicketType,
 
             }).ToListAsync();
 
