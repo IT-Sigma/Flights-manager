@@ -10,6 +10,7 @@ using Web.Models.Reservations;
 using Web.Models.Shared;
 using Web.Models;
 using Web.Models.Flights;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace Web.Controllers
 {
@@ -42,6 +43,15 @@ namespace Web.Controllers
                 UnoccupiedBusinessSeats = c.UnoccupiedBusinessSeats
 
             }).ToListAsync();
+
+            //Removing the flights without unoccupied seats
+            for (int i = items.Count-1; i >= 0; i--)
+            {
+                if (items[i].UnoccupiedBusinessSeats == 0 && items[i].UnoccupiedSeats == 0)
+                {
+                    items.Remove(items[i]);
+                }
+            }
 
             model.Items = items;
             model.Pager.PagesCount = (int)Math.Ceiling(await _context.Flights.CountAsync() / (double)PageSize);

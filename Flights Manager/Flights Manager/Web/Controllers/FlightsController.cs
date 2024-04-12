@@ -102,6 +102,7 @@ namespace Web.Controllers
 
             FlightsEditViewModel editedFlight = new FlightsEditViewModel
             {
+                FlightId = flight.FlightId,
                 PlaneNumber = flight.PlaneNumber,
                 LocationFrom = flight.LocationFrom,
                 LocationTo = flight.LocationTo,
@@ -125,6 +126,7 @@ namespace Web.Controllers
             {
                 Flight flight = new Flight()
                 {
+                    FlightId = editModel.FlightId,
                     PlaneNumber = editModel.PlaneNumber,
                     LocationFrom = editModel.LocationFrom,
                     LocationTo = editModel.LocationTo,

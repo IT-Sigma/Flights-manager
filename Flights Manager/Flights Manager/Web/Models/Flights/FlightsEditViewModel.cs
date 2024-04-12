@@ -8,6 +8,7 @@ namespace Web.Models.Flights
 {
     public class FlightsEditViewModel
     {
+        [Key]
         public int FlightId { get; set; }
         [Required]
         public string PlaneNumber { get; set; }
