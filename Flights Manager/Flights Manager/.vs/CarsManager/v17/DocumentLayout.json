@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\kyord\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AE7E4D7A-7EB0-47A7-9CE2-9B564BBB8686}|Data\\Data.csproj|c:\\users\\kyord\\desktop\\flights-manager\\flights manager\\flights manager\\data\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE7E4D7A-7EB0-47A7-9CE2-9B564BBB8686}|Data\\Data.csproj|solutionrelative:data\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F3DE2956-7785-4499-B149-C79013A54289}|Web\\Web.csproj|c:\\users\\kyord\\desktop\\flights-manager\\flights manager\\flights manager\\web\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3DE2956-7785-4499-B149-C79013A54289}|Web\\Web.csproj|solutionrelative:web\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,6 +27,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\kyord\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Data\\Entity\\User.cs",
+              "RelativeDocumentMoniker": "Data\\Entity\\User.cs",
+              "ToolTip": "C:\\Users\\kyord\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Data\\Entity\\User.cs",
+              "RelativeToolTip": "Data\\Entity\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T14:03:38.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ReservationsController.cs",
               "DocumentMoniker": "C:\\Users\\kyord\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Web\\Controllers\\ReservationsController.cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\ReservationsController.cs",
@@ -35,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FlightsController.cs",
               "DocumentMoniker": "C:\\Users\\kyord\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Web\\Controllers\\FlightsController.cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\FlightsController.cs",
@@ -43,8 +60,7 @@
               "RelativeToolTip": "Web\\Controllers\\FlightsController.cs",
               "ViewState": "AQIAAKoAAAAAAAAAAAAuwGAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T12:48:48.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T12:48:48.24Z"
             }
           ]
         }
