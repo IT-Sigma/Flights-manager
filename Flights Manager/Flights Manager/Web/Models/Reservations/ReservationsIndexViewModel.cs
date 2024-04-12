@@ -9,6 +9,6 @@ namespace Web.Models.Reservations
     {
         public PagerViewModel Pager { get; set; }
 
-        public ICollection<FlightsViewModel> Items { get; set; }
+        public ICollection<ReservationsViewModel> Items { get; set; }
     }
 }

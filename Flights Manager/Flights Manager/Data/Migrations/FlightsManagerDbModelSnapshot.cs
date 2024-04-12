@@ -89,10 +89,16 @@ namespace Data.Migrations
                     b.Property<int>("PhoneNumber")
                         .HasColumnType("int");
 
+                    b.Property<string>("PlaneNumber")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Surname")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("TicketType")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("ReservationId");

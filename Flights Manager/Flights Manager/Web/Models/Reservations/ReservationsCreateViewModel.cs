@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 using Data.Enumeration;
 using Web.Attributes;
 
@@ -9,9 +10,9 @@ namespace Web.Models.Reservations
         [Key]
         [Required]
         public int ReservationId { get; set; }
-        [Required] 
+        [AllowNull] 
         public int FlightId { get; set; }
-        [Required]
+        [AllowNull]
         public string FirstName { get; set; }
         [Required]
         public string Surname { get; set; }

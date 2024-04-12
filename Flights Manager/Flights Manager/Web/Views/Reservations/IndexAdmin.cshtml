@@ -1,0 +1,50 @@
+﻿@using Web.Models.Reservations
+@model Web.Models.Reservations.ReservationsIndexViewModel
+
+@{
+    ViewData["Title"] = "IndexAdmin";
+}
+
+<h1>Index</h1>
+
+<h4>Reservations</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                First name
+            </th>
+            <th>
+                Last name
+            </th>
+            <th>
+                Reservation id
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (ReservationsViewModel item in Model.Items)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReservationId)
+                </td>
+            </tr>
+        }
+    </tbody>
+    <ul class="pagination">
+        @for (var i = 1; i <= Model.Pager.PagesCount; i++)
+        {
+            <li class="page-item @(i == Model.Pager.CurrentPage ? "active" : "")">
+                <a asp-route-Pager.CurrentPage="@i" class="page-link">@i</a>
+            </li>
+        }
+    </ul>
+</table>

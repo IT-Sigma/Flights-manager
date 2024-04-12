@@ -49,6 +49,25 @@ namespace Web.Controllers
             return View(model);
         }
 
+        public async Task<IActionResult> IndexAdmin(ReservationsIndexViewModel model)
+        {
+            model.Pager ??= new PagerViewModel();
+            model.Pager.CurrentPage = model.Pager.CurrentPage <= 0 ? 1 : model.Pager.CurrentPage;
+
+            List<ReservationsViewModel> items = await _context.Reservations.Skip((model.Pager.CurrentPage - 1) * PageSize).Take(PageSize).Select(c => new ReservationsViewModel()
+            {
+                ReservationId = c.ReservationId,
+                FlightId = c.FlightId,
+                UserId = c.UserId,
+
+            }).ToListAsync();
+
+            model.Items = items;
+            model.Pager.PagesCount = (int)Math.Ceiling(await _context.Reservations.CountAsync() / (double)PageSize);
+
+            return View(model);
+        }
+
         // GET: Reservations
         public IActionResult Create()
         {
