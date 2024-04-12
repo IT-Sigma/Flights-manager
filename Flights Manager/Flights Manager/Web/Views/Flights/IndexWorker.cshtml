@@ -1,0 +1,95 @@
+﻿@using Web.Models.Flights
+@using Web.Controllers;
+@model Web.Models.Flights.FlightsIndexViewModel
+
+@{
+    ViewData["Title"] = "IndexWorker";
+}
+
+<h1>Index</h1>
+
+<h4>Flights</h4>
+
+<button style="padding: 5px 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;" OnClick="Button_Click">10</button>
+<button style="padding: 5px 10px; background-color: #008CBA; color: white; border: none; border-radius: 5px; cursor: pointer;" OnClick="Button_Click">25</button>
+<button style="padding: 5px 10px; background-color: #f44336; color: white; border: none; border-radius: 5px; cursor: pointer;" OnClick="Button_Click">50</button>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Plane number
+            </th>
+            <th>
+                Location from
+            </th>
+            <th>
+                Location to
+            </th>
+            <th>
+                Take-off
+            </th>
+            <th>
+                Landing
+            </th>
+            <th>
+                Plane type
+            </th>
+            <th>
+                Pilot name
+            </th>
+            <th>
+                Unoccupied seats
+            </th>
+            <th>
+                Unoccupied business seats
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (FlightsViewModel item in Model.Items)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PlaneNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LocationFrom)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LocationTo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TakeOff)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Landing)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PlaneType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PilotName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnoccupiedSeats)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnoccupiedBusinessSeats)
+                </td>
+            </tr>
+        }
+    </tbody>
+    <ul class="pagination">
+        @for (var i = 1; i <= Model.Pager.PagesCount; i++)
+        {
+            <li class="page-item @(i == Model.Pager.CurrentPage ? "active" : "")">
+                <a asp-route-Pager.CurrentPage="@i" class="page-link">@i</a>
+            </li>
+        }
+    </ul>
+</table>

@@ -1256,3 +1256,4 @@ C:\Users\kyord\Desktop\Flights-manager\Flights Manager\Flights Manager\Web\obj\D
 C:\Users\kyord\Desktop\Flights-manager\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Web.pdb
 C:\Users\kyord\Desktop\Flights-manager\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Web.genruntimeconfig.cache
 C:\Users\kyord\Desktop\Flights-manager\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Razor\Views\Reservations\IndexAdmin.cshtml.g.cs
+C:\Users\kyord\Desktop\Flights-manager\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Razor\Views\Flights\IndexWorker.cshtml.g.cs

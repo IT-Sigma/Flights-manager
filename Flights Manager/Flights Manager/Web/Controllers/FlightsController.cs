@@ -48,6 +48,33 @@ namespace Web.Controllers
             return View(model);
         }
 
+        // GET: Flights-Worker
+        public async Task<IActionResult> IndexWorker(FlightsIndexViewModel model)
+        {
+            model.Pager ??= new PagerViewModel();
+            model.Pager.CurrentPage = model.Pager.CurrentPage <= 0 ? 1 : model.Pager.CurrentPage;
+
+            List<FlightsViewModel> items = await _context.Flights.Skip((model.Pager.CurrentPage - 1) * PageSize).Take(PageSize).Select(c => new FlightsViewModel()
+            {
+                FlightId = c.FlightId,
+                PlaneNumber = c.PlaneNumber,
+                LocationFrom = c.LocationFrom,
+                LocationTo = c.LocationTo,
+                TakeOff = c.TakeOff,
+                Landing = c.Landing,
+                PlaneType = c.PlaneType,
+                PilotName = c.PilotName,
+                UnoccupiedSeats = c.UnoccupiedSeats,
+                UnoccupiedBusinessSeats = c.UnoccupiedBusinessSeats,
+
+            }).ToListAsync();
+
+            model.Items = items;
+            model.Pager.PagesCount = (int)Math.Ceiling(await _context.Flights.CountAsync() / (double)PageSize);
+
+            return View(model);
+        }
+
         // GET: Flights/Create
         public IActionResult Create()
         {
