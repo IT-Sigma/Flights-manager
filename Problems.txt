@@ -1,3 +1,3 @@
 Как да свържем резервациите с полетите(номерата им)
-Трябва в резервацията автоматично да се попълнят UserId, FlightId
-Takeoff, Landing - validation
+
+Validations
