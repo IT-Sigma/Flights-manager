@@ -13,7 +13,7 @@ namespace Web.Controllers
 {
     public class FlightsController : Controller
     {
-        private const int PageSize = 10;
+        public int PageSize = 10;
         private readonly FlightsManagerDb _context;
 
         public FlightsController()
