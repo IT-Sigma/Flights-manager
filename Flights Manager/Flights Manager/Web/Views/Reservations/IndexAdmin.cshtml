@@ -15,6 +15,12 @@
                 Reservation id
             </th>
             <th>
+                Flight id
+            </th>
+            <th>
+                User id
+            </th>
+            <th>
                 First name
             </th>
             <th>
@@ -49,6 +55,12 @@
             <tr>
                 <td>
                     @Html.DisplayFor(modelItem => item.ReservationId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FlightId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserId)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.FirstName)
