@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Identity;
 using System.Net;
 using System.Data;
 using Data.Enumeration;
+using Web.Models.Flights;
 
 namespace Web.Controllers
 {
@@ -94,6 +95,27 @@ namespace Web.Controllers
 
             return View(createModel);
         }
+
+
+
+        public async Task<IActionResult> LogIn(UsersViewModel model)
+        {
+            if (model == null)
+            {
+                return View(model);
+            }
+
+            User user = await _context.Users.FindAsync(model.UserId);
+
+            if (user == null)
+            {
+                return View(model);
+            }
+
+            return View(nameof(FlightsController.Index));
+        }
+
+
 
         // GET: Users/Delete/5
         public async Task<IActionResult> Delete(int id)
