@@ -113,6 +113,7 @@ namespace Web.Controllers
 
                     return RedirectToAction(nameof(Index));
                 }
+
             }
             return View(createModel);
         }
@@ -169,26 +170,28 @@ namespace Web.Controllers
                     UnoccupiedBusinessSeats = editModel.UnoccupiedBusinessSeats,
                 };
 
-                try
+                if (flight.Landing > flight.TakeOff)
                 {
-                    _context.Update(flight);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!FlightExists(flight.FlightId))
+                    try
                     {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                        _context.Update(flight);
+                        await _context.SaveChangesAsync();
 
-                return RedirectToAction(nameof(Index));
+                        return RedirectToAction(nameof(Index));
+                    }
+                    catch (DbUpdateConcurrencyException)
+                    {
+                        if (!FlightExists(flight.FlightId))
+                        {
+                            return NotFound();
+                        }
+                        else
+                        {
+                            throw;
+                        }
+                    }   
+                }
             }
-
             return View(editModel);
         }
 

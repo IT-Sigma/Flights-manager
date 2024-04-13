@@ -1258,3 +1258,4 @@ C:\Users\kyord\Desktop\Flights-manager\Flights Manager\Flights Manager\Web\obj\D
 C:\Users\kyord\Desktop\Flights-manager\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Razor\Views\Flights\IndexWorker.cshtml.g.cs
 C:\Users\kyord\Desktop\Flights-manager\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Razor\Views\Users\LogInForm.cshtml.g.cs
 C:\Users\kyord\Desktop\Flights-manager\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Razor\Views\Flights\Index.cshtml.g.cs
+C:\Users\kyord\Desktop\Flights-manager\Flights Manager\Flights Manager\Web\obj\Debug\netcoreapp3.0\Razor\Views\Reservations\IndexWorker.cshtml.g.cs

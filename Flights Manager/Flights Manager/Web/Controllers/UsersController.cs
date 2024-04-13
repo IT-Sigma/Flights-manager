@@ -83,11 +83,11 @@ namespace Web.Controllers
                     PhoneNumber = createModel.PhoneNumber,
                     Role = createModel.Role
                 };
-                if (_context is null)
+
+                if (user.EGN.ToString().Length != 10 || user.PhoneNumber.ToString().Length != 10)
                 {
-                    user.Role = createModel.Role = RoleEnum.Admin;
+                    return View(createModel);
                 }
-                else user.Role = createModel.Role;
 
                 _context.Add(user);
                 await _context.SaveChangesAsync();
@@ -108,21 +108,21 @@ namespace Web.Controllers
         }
 
         //Dava null na UsersViewModel model
-        public async Task<IActionResult> LogIn(int? UserId, string Password)
+        public async Task<IActionResult> LogIn(UsersViewModel model)
         {
-            /*if (model.UserId == null)
+            if (model == null)
             {
                 return View(model);
             }
-*/
-            User user = await _context.Users.FindAsync(UserId);
+
+            User user = await _context.Users.FindAsync(model.UserId);
 
             if (user == null)
             {
                 return View(nameof(LogInForm));
             }
 
-            if (user.Password == Password)
+            if (user.Password == model.Password)
             {
                 if (user.Role == RoleEnum.Admin)
                 {

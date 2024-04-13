@@ -21,5 +21,6 @@ namespace Data.Entity
         public string PilotName { get; set; }
         public int UnoccupiedSeats { get; set; }
         public int UnoccupiedBusinessSeats { get; set; }
+        public TimeSpan Duration { get; set; }
     }
 }

@@ -11,6 +11,7 @@ using Web.Models.Shared;
 using Web.Models;
 using Web.Models.Flights;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Data.Enumeration;
 
 namespace Web.Controllers
 {
@@ -36,7 +37,7 @@ namespace Web.Controllers
                 LocationFrom = c.LocationFrom,
                 LocationTo = c.LocationTo,
                 TakeOff = c.TakeOff,
-                Landing = c.Landing,
+                Duration = c.Duration,
                 PlaneType = c.PlaneType,
                 PilotName = c.PilotName,
                 UnoccupiedSeats = c.UnoccupiedSeats,
@@ -60,6 +61,34 @@ namespace Web.Controllers
         }
 
         public async Task<IActionResult> IndexAdmin(ReservationsIndexViewModel model)
+        {
+            model.Pager ??= new PagerViewModel();
+            model.Pager.CurrentPage = model.Pager.CurrentPage <= 0 ? 1 : model.Pager.CurrentPage;
+
+            List<ReservationsViewModel> items = await _context.Reservations.Skip((model.Pager.CurrentPage - 1) * PageSize).Take(PageSize).Select(c => new ReservationsViewModel()
+            {
+                ReservationId = c.ReservationId,
+                FlightId = c.FlightId,
+                UserId = c.UserId,
+                FirstName = c.FirstName,
+                Surname = c.Surname,
+                LastName = c.LastName,
+                Email = c.Email,
+                EGN = c.EGN,
+                Address = c.Address,
+                PhoneNumber = c.PhoneNumber,
+                Nationality = c.Nationality,
+                TicketType = c.TicketType,
+
+            }).ToListAsync();
+
+            model.Items = items;
+            model.Pager.PagesCount = (int)Math.Ceiling(await _context.Reservations.CountAsync() / (double)PageSize);
+
+            return View(model);
+        }
+
+        public async Task<IActionResult> IndexWorker(ReservationsIndexViewModel model)
         {
             model.Pager ??= new PagerViewModel();
             model.Pager.CurrentPage = model.Pager.CurrentPage <= 0 ? 1 : model.Pager.CurrentPage;
@@ -117,6 +146,15 @@ namespace Web.Controllers
                     TicketType = createModel.TicketType
                 };
 
+                if (reservation.EGN.ToString().Length != 10 || reservation.PhoneNumber.ToString().Length != 10)
+                {
+                    return View(createModel);
+                }
+                //Проверка дали има свободни места, ама първо трябва да се свържат полетите
+                /*if (reservation.TicketType == TicketTypeEnum.Standart || )
+                {
+
+                }*/
                 _context.Add(reservation);
                 await _context.SaveChangesAsync();
 

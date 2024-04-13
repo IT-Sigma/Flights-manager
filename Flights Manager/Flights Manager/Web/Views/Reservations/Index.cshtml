@@ -9,6 +9,10 @@
 
 <h4>Reservations</h4>
 
+<a asp-action="LogInForm" asp-controller="Users">
+    <button style="padding: 5px 10px; background-color: #F0FF17; color: black; border: none; border-radius: 5px; cursor: pointer; float: right">Log In</button>
+</a>
+
 <table class="table">
     <thead>
         <tr>
@@ -25,7 +29,7 @@
                 Take off
             </th>
             <th>
-                Landing
+                Duration
             </th>
             <th>
                 Plane type
@@ -59,7 +63,7 @@
                     @Html.DisplayFor(modelItem => item.TakeOff)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Landing)
+                    @Html.DisplayFor(modelItem => item.Duration)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.PlaneType)
