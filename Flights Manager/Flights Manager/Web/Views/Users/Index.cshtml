@@ -12,6 +12,15 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+<a asp-action="IndexAdmin" asp-controller="Reservations">
+    <button style="padding: 5px 10px; background-color: #F0FF17; color: black; border: none; border-radius: 5px; cursor: pointer; float: right">Open Reservations</button>
+</a>
+
+<a asp-action="Index" asp-controller="Flights">
+    <button style="padding: 5px 10px; background-color: #F0FF17; color: black; border: none; border-radius: 5px; cursor: pointer; float: right">Open Flights</button>
+</a>
+
 <table class="table">
     <thead>
         <tr>

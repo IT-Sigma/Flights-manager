@@ -1,8 +1,8 @@
 ﻿@using Data.Enumeration
-@model Web.Models.Users.UsersCreateViewModel
+@model Web.Models.Users.UsersViewModel
 
 @{
-    ViewData["Title"] = "LogIn";
+    ViewData["Title"] = "LogInForm";
 }
 
 <h1>LogIn</h1>
@@ -26,9 +26,15 @@
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<td>
+    <a asp-action="LogIn" asp-controller="Users">Log in</a>
+</td>
+
+<td>
+    <a asp-action="Index" asp-controller="Reservations">Back to List</a>
+</td>
+
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

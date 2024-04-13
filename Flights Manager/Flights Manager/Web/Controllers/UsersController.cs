@@ -13,6 +13,8 @@ using System.Net;
 using System.Data;
 using Data.Enumeration;
 using Web.Models.Flights;
+using Web.Controllers;
+using Web.Models.Reservations;
 
 namespace Web.Controllers
 {
@@ -98,24 +100,38 @@ namespace Web.Controllers
 
 
 
-        public async Task<IActionResult> LogIn(UsersViewModel model)
+        public IActionResult LogInForm()
         {
-            if (model == null)
+            UsersViewModel model = new UsersViewModel();
+
+            return View(model);
+        }
+
+        //Dava null na UsersViewModel model
+        public async Task<IActionResult> LogIn(int? UserId, string Password)
+        {
+            /*if (model.UserId == null)
             {
                 return View(model);
             }
-
-            User user = await _context.Users.FindAsync(model.UserId);
+*/
+            User user = await _context.Users.FindAsync(UserId);
 
             if (user == null)
             {
-                return View(model);
+                return View(nameof(LogInForm));
             }
 
-            return View(nameof(FlightsController.Index));
+            if (user.Password == Password)
+            {
+                if (user.Role == RoleEnum.Admin)
+                {
+                    return View(nameof(FlightsController.Index));
+                }
+                return View(nameof(FlightsController.IndexWorker));
+            }
+            return View(nameof(LogInForm));
         }
-
-
 
         // GET: Users/Delete/5
         public async Task<IActionResult> Delete(int id)

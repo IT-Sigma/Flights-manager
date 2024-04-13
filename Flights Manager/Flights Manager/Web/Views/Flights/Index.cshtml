@@ -3,7 +3,7 @@
 @model Web.Models.Flights.FlightsIndexViewModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "FlightsIndex";
 }
 
 <h1>Index</h1>
@@ -13,6 +13,17 @@
 <button style="padding: 5px 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;" OnClick="Button_Click">10</button>
 <button style="padding: 5px 10px; background-color: #008CBA; color: white; border: none; border-radius: 5px; cursor: pointer;" OnClick="Button_Click">25</button>
 <button style="padding: 5px 10px; background-color: #f44336; color: white; border: none; border-radius: 5px; cursor: pointer;" OnClick="Button_Click">50</button>
+
+<button style="padding: 5px 10px; background-color: #f44336; color: white; border: none; border-radius: 5px; cursor: pointer;" OnClick="Button_Click">50</button>
+
+
+<a asp-action="Index" asp-controller="Users" >
+    <button style="padding: 5px 10px; background-color: #F0FF17; color: black; border: none; border-radius: 5px; cursor: pointer; float: right">Open Users</button>
+</a>
+
+<a asp-action="IndexAdmin" asp-controller="Reservations">
+    <button style="padding: 5px 10px; background-color: #F0FF17; color: black; border: none; border-radius: 5px; cursor: pointer; float: right">Open Reservations</button>
+</a>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -81,7 +92,7 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.UnoccupiedBusinessSeats)
                 </td>
-                <td>
+                <td>    
                     <a asp-action="Edit" asp-route-id="@item.FlightId">Edit</a> |
                     <a asp-action="Delete" asp-route-id="@item.FlightId">Delete</a>
                 </td>
