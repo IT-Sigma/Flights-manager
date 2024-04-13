@@ -131,7 +131,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            FlightsEditViewModel editedFlight = new FlightsEditViewModel
+            FlightsEditViewModel model = new FlightsEditViewModel
             {
                 FlightId = flight.FlightId,
                 PlaneNumber = flight.PlaneNumber,
@@ -145,7 +145,7 @@ namespace Web.Controllers
                 UnoccupiedBusinessSeats = flight.UnoccupiedBusinessSeats,
             };
 
-            return View(editedFlight);
+            return View(model);
         }
 
         // POST: Flights/Edit/5       
