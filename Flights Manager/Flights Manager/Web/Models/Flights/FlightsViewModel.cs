@@ -26,5 +26,6 @@ namespace Web.Models.Flights
         public int UnoccupiedSeats { get; set; }
         [Required]
         public int UnoccupiedBusinessSeats { get; set; }
+        public TimeSpan Duration { get; set; }
     }
 }
