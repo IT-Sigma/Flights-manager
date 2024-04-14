@@ -131,7 +131,7 @@ namespace Web.Controllers
                 return View(nameof(ReservationsController.IndexWorker));
             }
             return View(nameof(LogInForm));
-        }
+            }
 
         // GET: Users/Delete/5
         public async Task<IActionResult> Delete(int id)

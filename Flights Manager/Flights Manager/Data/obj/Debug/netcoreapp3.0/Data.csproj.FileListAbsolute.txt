@@ -100,3 +100,17 @@ C:\Users\kyord\Desktop\Flights-manager\Flights Manager\Flights Manager\Data\obj\
 C:\Users\kyord\Desktop\Flights-manager\Flights Manager\Flights Manager\Data\obj\Debug\netcoreapp3.0\Data.dll
 C:\Users\kyord\Desktop\Flights-manager\Flights Manager\Flights Manager\Data\obj\Debug\netcoreapp3.0\Data.pdb
 C:\Users\kyord\Desktop\Flights-manager\Flights Manager\Flights Manager\Data\obj\Debug\netcoreapp3.0\Data.genruntimeconfig.cache
+C:\Users\PC\Desktop\Flights-manager\Flights Manager\Flights Manager\Data\bin\Debug\netcoreapp3.0\Data.deps.json
+C:\Users\PC\Desktop\Flights-manager\Flights Manager\Flights Manager\Data\bin\Debug\netcoreapp3.0\Data.runtimeconfig.json
+C:\Users\PC\Desktop\Flights-manager\Flights Manager\Flights Manager\Data\bin\Debug\netcoreapp3.0\Data.runtimeconfig.dev.json
+C:\Users\PC\Desktop\Flights-manager\Flights Manager\Flights Manager\Data\bin\Debug\netcoreapp3.0\Data.dll
+C:\Users\PC\Desktop\Flights-manager\Flights Manager\Flights Manager\Data\bin\Debug\netcoreapp3.0\Data.pdb
+C:\Users\PC\Desktop\Flights-manager\Flights Manager\Flights Manager\Data\obj\Debug\netcoreapp3.0\Data.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\Flights-manager\Flights Manager\Flights Manager\Data\obj\Debug\netcoreapp3.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\Flights-manager\Flights Manager\Flights Manager\Data\obj\Debug\netcoreapp3.0\Data.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\Flights-manager\Flights Manager\Flights Manager\Data\obj\Debug\netcoreapp3.0\Data.AssemblyInfo.cs
+C:\Users\PC\Desktop\Flights-manager\Flights Manager\Flights Manager\Data\obj\Debug\netcoreapp3.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Flights-manager\Flights Manager\Flights Manager\Data\obj\Debug\netcoreapp3.0\Data.sourcelink.json
+C:\Users\PC\Desktop\Flights-manager\Flights Manager\Flights Manager\Data\obj\Debug\netcoreapp3.0\Data.dll
+C:\Users\PC\Desktop\Flights-manager\Flights Manager\Flights Manager\Data\obj\Debug\netcoreapp3.0\Data.pdb
+C:\Users\PC\Desktop\Flights-manager\Flights Manager\Flights Manager\Data\obj\Debug\netcoreapp3.0\Data.genruntimeconfig.cache
