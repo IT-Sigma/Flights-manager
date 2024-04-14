@@ -12,10 +12,7 @@ namespace Data.Entity
     {
         [Key]
         public int ReservationId { get; set; }
-        //da se machnat
-        [AllowNull]
         public int UserId { get; set; }
-        [AllowNull]
         public string PlaneNumber { get; set; }
         public int FlightId { get; set; }
         public string FirstName { get; set; }

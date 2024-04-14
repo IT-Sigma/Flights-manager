@@ -7,7 +7,6 @@ namespace Data.Enumeration
     public enum RoleEnum
     {
         Admin,
-        Worker,
-        Guest
+        Worker
     }
 }

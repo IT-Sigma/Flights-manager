@@ -128,7 +128,7 @@ namespace Web.Controllers
                 {
                     return RedirectToAction(nameof(Index));
                 }
-                return View(nameof(ReservationsController.IndexWorker));
+                return RedirectToAction("IndexWorker", "Reservations");
             }
             return View(nameof(LogInForm));
             }

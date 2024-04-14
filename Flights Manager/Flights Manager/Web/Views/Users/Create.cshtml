@@ -59,9 +59,10 @@
                 <span asp-validation-for="PhoneNumber" class="text-danger"></span>
             </div>
             <div class="dropdown">
-                <select style="background-color: #4CAF50;color: white; padding: 8px 20px; /* Adjust padding as needed */font-size: 16px;border: none;cursor: pointer;">
-                    <option style="background-color: white; /* Background color of options */color: black;" asp-for="Role" value="Worker">Worker</option>
-                    <option id="Admin" style="background-color: white; /* Background color of options */color: black" asp-for="Role" value="Admin">Admin</option>
+                <select style="background-color: #4CAF50;color: white; padding: 8px 20px; /* Adjust padding as needed */font-size: 16px;border: none;cursor: pointer;"asp-for="Role" asp-items="Html.GetEnumSelectList<RoleEnum>()">
+                    
+                    @* <option style="background-color: white; /* Background color of options */color: black;" asp-for="Role" class="form-control" >Worker</option>
+                    <option id="Admin" style="background-color: white; /* Background color of options */color: black" asp-for="Role" class="form-control">Admin</option> *@
                 </select>
             </div>
             <br />

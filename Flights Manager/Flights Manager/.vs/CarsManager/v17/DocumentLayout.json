@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AE7E4D7A-7EB0-47A7-9CE2-9B564BBB8686}|Data\\Data.csproj|c:\\users\\pc\\desktop\\flights-manager\\flights manager\\flights manager\\data\\entity\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE7E4D7A-7EB0-47A7-9CE2-9B564BBB8686}|Data\\Data.csproj|solutionrelative:data\\entity\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3DE2956-7785-4499-B149-C79013A54289}|Web\\Web.csproj|c:\\users\\pc\\desktop\\flights-manager\\flights manager\\flights manager\\web\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3DE2956-7785-4499-B149-C79013A54289}|Web\\Web.csproj|solutionrelative:web\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3DE2956-7785-4499-B149-C79013A54289}|Web\\Web.csproj|c:\\users\\pc\\desktop\\flights-manager\\flights manager\\flights manager\\web\\views\\flights\\indexworker.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F3DE2956-7785-4499-B149-C79013A54289}|Web\\Web.csproj|solutionrelative:web\\views\\flights\\indexworker.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3DE2956-7785-4499-B149-C79013A54289}|Web\\Web.csproj|c:\\users\\pc\\desktop\\flights-manager\\flights manager\\flights manager\\web\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3DE2956-7785-4499-B149-C79013A54289}|Web\\Web.csproj|solutionrelative:web\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3DE2956-7785-4499-B149-C79013A54289}|Web\\Web.csproj|c:\\users\\pc\\desktop\\flights-manager\\flights manager\\flights manager\\web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3DE2956-7785-4499-B149-C79013A54289}|Web\\Web.csproj|solutionrelative:web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE7E4D7A-7EB0-47A7-9CE2-9B564BBB8686}|Data\\Data.csproj|c:\\users\\pc\\desktop\\flights-manager\\flights manager\\flights manager\\data\\enumeration\\roleenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE7E4D7A-7EB0-47A7-9CE2-9B564BBB8686}|Data\\Data.csproj|solutionrelative:data\\enumeration\\roleenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F3DE2956-7785-4499-B149-C79013A54289}|Web\\Web.csproj|c:\\users\\pc\\desktop\\flights-manager\\flights manager\\flights manager\\web\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F3DE2956-7785-4499-B149-C79013A54289}|Web\\Web.csproj|solutionrelative:web\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -13,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F3DE2956-7785-4499-B149-C79013A54289}|Web\\Web.csproj|c:\\users\\pc\\desktop\\flights-manager\\flights manager\\flights manager\\web\\views\\flights\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F3DE2956-7785-4499-B149-C79013A54289}|Web\\Web.csproj|solutionrelative:web\\views\\flights\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3DE2956-7785-4499-B149-C79013A54289}|Web\\Web.csproj|c:\\users\\pc\\desktop\\flights-manager\\flights manager\\flights manager\\web\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3DE2956-7785-4499-B149-C79013A54289}|Web\\Web.csproj|solutionrelative:web\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,19 +63,84 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Reservation.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Data\\Entity\\Reservation.cs",
+              "RelativeDocumentMoniker": "Data\\Entity\\Reservation.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Data\\Entity\\Reservation.cs",
+              "RelativeToolTip": "Data\\Entity\\Reservation.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwA0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T10:09:41.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IndexWorker.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Web\\Views\\Flights\\IndexWorker.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Flights\\IndexWorker.cshtml",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Web\\Views\\Flights\\IndexWorker.cshtml",
+              "RelativeToolTip": "Web\\Views\\Flights\\IndexWorker.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAB9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-14T10:03:44.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Web\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T10:02:00.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReservationsController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Web\\Controllers\\ReservationsController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\ReservationsController.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Web\\Controllers\\ReservationsController.cs",
+              "RelativeToolTip": "Web\\Controllers\\ReservationsController.cs",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAowIEAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T09:59:08.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RoleEnum.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Data\\Enumeration\\RoleEnum.cs",
+              "RelativeDocumentMoniker": "Data\\Enumeration\\RoleEnum.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Data\\Enumeration\\RoleEnum.cs",
+              "RelativeToolTip": "Data\\Enumeration\\RoleEnum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T09:56:16.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Web\\Views\\Users\\Create.cshtml",
               "RelativeDocumentMoniker": "Web\\Views\\Users\\Create.cshtml",
               "ToolTip": "C:\\Users\\PC\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Web\\Views\\Users\\Create.cshtml",
               "RelativeToolTip": "Web\\Views\\Users\\Create.cshtml",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAD8AAACDAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAD0AAADiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-14T09:02:02.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Web\\Views\\Flights\\Edit.cshtml",
               "RelativeDocumentMoniker": "Web\\Views\\Flights\\Edit.cshtml",
@@ -63,8 +148,7 @@
               "RelativeToolTip": "Web\\Views\\Flights\\Edit.cshtml",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-14T08:53:37.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T08:53:37.714Z"
             },
             {
               "$type": "Document",
@@ -74,14 +158,14 @@
               "RelativeDocumentMoniker": "Web\\Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Web\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Web\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAHkAAAAAAAAAAADgv4UAAAAMAAAA",
+              "ViewState": "AQIAAHMAAAAAAAAAAAAvwIIAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-14T08:39:39.568Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "FlightsController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Flights-manager\\Flights Manager\\Flights Manager\\Web\\Controllers\\FlightsController.cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\FlightsController.cs",
@@ -89,8 +173,7 @@
               "RelativeToolTip": "Web\\Controllers\\FlightsController.cs",
               "ViewState": "AQIAAGwAAAAAAAAAAAArwHoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T08:39:39.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T08:39:39.599Z"
             }
           ]
         }
