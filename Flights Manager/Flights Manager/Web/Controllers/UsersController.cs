@@ -126,9 +126,9 @@ namespace Web.Controllers
             {
                 if (user.Role == RoleEnum.Admin)
                 {
-                    return View(nameof(FlightsController.Index));
+                    return RedirectToAction(nameof(Index));
                 }
-                return View(nameof(FlightsController.IndexWorker));
+                return View(nameof(ReservationsController.IndexWorker));
             }
             return View(nameof(LogInForm));
         }
