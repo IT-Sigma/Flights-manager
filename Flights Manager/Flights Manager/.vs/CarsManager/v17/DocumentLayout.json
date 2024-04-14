@@ -70,8 +70,7 @@
               "RelativeToolTip": "Web\\Views\\Users\\LogInForm.cshtml",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-14T06:38:36.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T06:38:36.309Z"
             },
             {
               "$type": "Document",
@@ -83,8 +82,7 @@
               "RelativeToolTip": "Web\\Models\\Users\\UsersViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T06:35:22.016Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T06:35:22.016Z"
             },
             {
               "$type": "Document",
@@ -96,8 +94,7 @@
               "RelativeToolTip": "Data\\Migrations\\20240414063419_CreateDb.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T06:34:19.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T06:34:19.647Z"
             },
             {
               "$type": "Document",
@@ -109,8 +106,7 @@
               "RelativeToolTip": "Data\\FlightsManagerDb.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T05:46:15.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T05:46:15.69Z"
             },
             {
               "$type": "Document",
@@ -122,8 +118,7 @@
               "RelativeToolTip": "Data\\Enumeration\\TicketTypeEnum.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T05:44:56.98Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T05:44:56.98Z"
             },
             {
               "$type": "Document",
@@ -135,8 +130,7 @@
               "RelativeToolTip": "Data\\Enumeration\\RoleEnum.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T05:44:12.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T05:44:12.029Z"
             },
             {
               "$type": "Document",
@@ -148,8 +142,7 @@
               "RelativeToolTip": "Web\\Controllers\\FlightsController.cs",
               "ViewState": "AQIAAKsAAAAAAAAAAAAqwM0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T10:51:44.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T10:51:44.232Z"
             },
             {
               "$type": "Document",
@@ -161,8 +154,7 @@
               "RelativeToolTip": "Web\\Views\\Flights\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAChAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-13T10:47:32.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T10:47:32.77Z"
             },
             {
               "$type": "Document",
@@ -174,8 +166,7 @@
               "RelativeToolTip": "Web\\Views\\Reservations\\Index.cshtml",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAAE8AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-13T10:45:01.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T10:45:01.32Z"
             },
             {
               "$type": "Document",
@@ -187,8 +178,7 @@
               "RelativeToolTip": "Data\\Entity\\Flight.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T10:43:37.987Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T10:43:37.987Z"
             },
             {
               "$type": "Document",
@@ -200,8 +190,7 @@
               "RelativeToolTip": "Web\\Controllers\\ReservationsController.cs",
               "ViewState": "AQIAACoAAAAAAAAAAAAowD4AAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T10:43:00.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T10:43:00.902Z"
             },
             {
               "$type": "Document",
