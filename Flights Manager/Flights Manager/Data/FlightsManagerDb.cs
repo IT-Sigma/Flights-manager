@@ -11,7 +11,7 @@ namespace Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server = DESKTOP-4RLM30D\SQLEXPRESS; Database=FlightsManagerDb; Integrated security = True; Connection Timeout = 30;");
+            optionsBuilder.UseSqlServer(@"Server = DESKTOP-S61RKTC\SQLEXPRESS; Database=FlightsManagerDb; Integrated security = True; Connection Timeout = 30;");
             optionsBuilder.UseLazyLoadingProxies();
         }
     }
