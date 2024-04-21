@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\FlightManager 2.0\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B731B3D8-FDA4-4B73-B324-F30E36006E51}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\user\\desktop\\flightmanager 2.0\\presentationlayer\\controllers\\flightscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B731B3D8-FDA4-4B73-B324-F30E36006E51}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\flightscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B731B3D8-FDA4-4B73-B324-F30E36006E51}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\user\\desktop\\flightmanager 2.0\\presentationlayer\\models\\flightpagemanagerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B731B3D8-FDA4-4B73-B324-F30E36006E51}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\models\\flightpagemanagerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B731B3D8-FDA4-4B73-B324-F30E36006E51}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\user\\desktop\\flightmanager 2.0\\presentationlayer\\views\\flights\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B731B3D8-FDA4-4B73-B324-F30E36006E51}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\flights\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5958B395-F5AA-4C29-974C-B2993AB3B88E}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\user\\desktop\\flightmanager 2.0\\businesslayer\\flight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5958B395-F5AA-4C29-974C-B2993AB3B88E}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\flight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Flight.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FlightManager 2.0\\BusinessLayer\\Flight.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Flight.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FlightManager 2.0\\BusinessLayer\\Flight.cs",
+              "RelativeToolTip": "BusinessLayer\\Flight.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T12:16:01.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FlightPageManagerViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FlightManager 2.0\\PresentationLayer\\Models\\FlightPageManagerViewModel.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Models\\FlightPageManagerViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FlightManager 2.0\\PresentationLayer\\Models\\FlightPageManagerViewModel.cs",
+              "RelativeToolTip": "PresentationLayer\\Models\\FlightPageManagerViewModel.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T11:30:19.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FlightsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FlightManager 2.0\\PresentationLayer\\Controllers\\FlightsController.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\FlightsController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FlightManager 2.0\\PresentationLayer\\Controllers\\FlightsController.cs",
+              "RelativeToolTip": "PresentationLayer\\Controllers\\FlightsController.cs",
+              "ViewState": "AQIAAKUAAAAAAAAAAAAAALMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T08:48:45.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FlightManager 2.0\\PresentationLayer\\Views\\Flights\\Index.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Flights\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FlightManager 2.0\\PresentationLayer\\Views\\Flights\\Index.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Views\\Flights\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T08:47:37.795Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

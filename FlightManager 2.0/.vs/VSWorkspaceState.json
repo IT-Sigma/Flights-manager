@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\PresentationLayer",
+    "\\PresentationLayer\\Controllers",
+    "\\PresentationLayer\\Models",
+    "\\PresentationLayer\\obj",
+    "\\PresentationLayer\\Properties",
+    "\\PresentationLayer\\Views",
+    "\\PresentationLayer\\Views\\Flights",
+    "\\PresentationLayer\\Views\\Home",
+    "\\PresentationLayer\\Views\\Shared"
+  ],
+  "SelectedNode": "\\PresentationLayer\\Controllers\\UsersController.cs",
+  "PreviewInSolutionExplorer": false
+}

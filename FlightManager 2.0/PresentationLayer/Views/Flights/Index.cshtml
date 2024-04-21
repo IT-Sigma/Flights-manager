@@ -1,0 +1,120 @@
+﻿@model FlightPageManagerViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Flights</h1>
+
+<form asp-action="FilterByPageSize">
+    Items
+
+    <select asp-for="PageSize" class="form-control" asp-items="ViewBag.Pages"></select>
+    
+@{
+    for (int i = 1; i <= Model.Pages; i++)
+    {
+                <input type="hidden" id="currentPage" asp-for="@Model.CurrentPage" />
+                    <button onclick="GetPage(@i)" asp-for="@Model.CurrentPage" value="@i" type="submit">@i</button>
+    }
+}
+
+</form>
+
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Flight Id
+            </th>
+            <th>
+               Plane Number
+            </th>
+            <th>
+               From
+            </th>
+            <th>
+                To
+            </th>
+            <th>
+                Take off
+            </th>
+            <th>
+                Landing
+            </th>
+            <th>
+                PlaneType
+            </th>
+            <th>
+                PilotName
+            </th>
+            <th>
+                Unoccupied Seats
+            </th>
+            <th>
+                Unoccupied Business Seats
+            </th>
+            <th>
+                 Duration
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Flights) {
+        <tr>
+            <td>
+                    @Html.DisplayFor(modelItem => item.FlightId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlaneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationFrom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationTo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TakeOff)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Landing)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlaneType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PilotName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnoccupiedSeats)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnoccupiedBusinessSeats)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duration)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FlightId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.FlightId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.FlightId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<p>@ViewData["Error"]</p>
+
+<script>
+    function GetPage(i) 
+    { 
+        document.getElementById("currentPage").value = i;
+    }
+</script>
